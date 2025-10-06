@@ -1,21 +1,45 @@
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: #cccccc;
+    max-width: 80%;
+    margin: auto;
 }
 
 header {
     background-color: #4a90e2;
     color: white;
-    padding: 10px;
 }
-
-h1 {
-    margin: 0;
-    padding: 5px;
+header h1 {
+    text-align: center;;
 }
-
+main{
+    width:66%;
+    float:left;
+    background-color: bisque;
+    min-height: 300px;
+}
+main h2, main p{
+    padding:10px;
+}
+img{
+    display: block; 
+    margin: 0 auto;
+    width:52%;
+}
+aside h2, aside p, aside ol, aside ul{
+    padding:10px;
+    padding-left:20px;
+}
+aside{
+    width:34%;
+    float:right;
+    min-height: 300px;
+    background-color: rgb(131, 127, 255);
+}
+nav {
+    background-color: rgb(131, 127, 255);
+}
 nav ul {
     list-style: none;
     margin: 0;
@@ -23,29 +47,30 @@ nav ul {
 }
 
 nav ul li {
-    display: block;
-    margin: 2px 0;
+    display: inline-block; 
 }
 
 nav ul li a {
+    display: block;
+    padding: 0.5em 1.5em;
+    font-size: 1.5em;
     color: #ffffff;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
+nav ul li a:hover {
+    background-color: #e2be4a;
+}
 section {
     background-color: #ff9966;
-    margin: 10px;
-    padding: 15px;
 }
 
 section h1 {
     color: white;
-    margin: 0 0 10px 0;
 }
 
 footer {
     background-color: #4a90e2;
     color: white;
-    padding: 10px;
-    margin-top: 10px;
+    clear:both;
 }
