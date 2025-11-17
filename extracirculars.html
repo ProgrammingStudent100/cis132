@@ -2,43 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Project 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Abraham - Extracurriculars</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-styles.css">
 </head>
 <body>
+    <!-- Header with Navigation -->
     <header>
-        <h1>Danny Abraham</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="extracirculars.html">Extracurriculars</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand fs-3 fw-bold" href="index.html">Danny Abraham</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="extracirculars.html">Extracurriculars</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h2>My Extracirculars</h2>
-        <p>In my spare time, I often try to do extracurriculars related to my major. I currently organize hackathons in an organization called Hack CC, which
-            aims to give community college students a hackathon experience. We are planning to host a hackathon at Mira Costa College this Fall 2025 Semester. I also participate
-            in extracurriculars, where I learn more about programming such as AILA, CTI, and Codepath.
-        </p>
-    </main>
-    <aside>
-        <h2>The three extracurriculars</h2>
-        <ol>
-            <li>Hack CC</li>
-            <li>CTI</li>
-            <li>Computing Club at El Camino College</li>
-        </ol>
-        <p>I hope to dedicate more time to hobbyist programming, because I do not spend enough time on it</p>
-    </aside>
-    <footer>
-        <p>Last updated on October 5th</p>
-        <p>Email: <a href="mailto:danny_abraham@elcamino.edu">danny_abraham@elcamino.edu</a></p>
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Main Section -->
+            <main class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">My Extracirculars</h2>
+                        <p class="card-text">
+                            In my spare time, I often try to do extracurriculars related to my major. 
+                            I currently organize hackathons in an organization called Hack CC, which aims 
+                            to give community college students a hackathon experience. We are planning to 
+                            host a hackathon at Mira Costa College this Fall 2025 Semester. I also participate 
+                            in extracurriculars, where I learn more about programming such as AILA, CTI, and Codepath.
+                        </p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="col-lg-4">
+                <div class="card shadow-sm bg-light">
+                    <div class="card-body">
+                        <h2 class="card-title h5 mb-3">The three extracurriculars</h2>
+                        <ol class="mb-3">
+                            <li>Hack CC</li>
+                            <li>CTI</li>
+                            <li>Computing Club at El Camino College</li>
+                        </ol>
+                        <p class="card-text">
+                            I hope to dedicate more time to hobbyist programming, because I do not spend 
+                            enough time on it
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">Last updated on October 5th</p>
+            <p class="mb-0">
+                Email: <a href="mailto:danny_abraham@elcamino.edu" class="text-white">danny_abraham@elcamino.edu</a>
+            </p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
-
-
