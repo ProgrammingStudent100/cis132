@@ -2,42 +2,91 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Project 1</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danny Abraham - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="custom-styles.css">
 </head>
 <body>
+    <!-- Header with Navigation -->
     <header>
-        <h1>Danny Abraham</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="extracirculars.html">Extracirculars</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand fs-3 fw-bold" href="index.html">Danny Abraham</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="extracirculars.html">Extracurriculars</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <h2>Hi!</h2>
-                <p>Hi, my name is Danny. I am a computer science major attending El Camino College. I am taking this course
-           to improve the foundations of my web development skills. I hope to transfer to a 4 year university by Fall 2026 and then take more web development courses if 
-           possible. While, I am a full time student, I also work part time as a supplemental instructor for Calculus I, and as a tutor for various math courses. When I transfer, and finish my degree,
-           I hope to work as a full time software engineer.  
-        </p>
-    </main>
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <!-- Main Section -->
+            <main class="col-lg-8">
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4">Hi!</h2>
+                        <p class="card-text">
+                            Hi, my name is Danny. I am a computer science major attending El Camino College. 
+                            I am taking this course to improve the foundations of my web development skills. 
+                            I hope to transfer to a 4 year university by Fall 2026 and then take more web 
+                            development courses if possible. While, I am a full time student, I also work part 
+                            time as a supplemental instructor for Calculus I, and as a tutor for various math 
+                            courses. When I transfer, and finish my degree, I hope to work as a full time 
+                            software engineer.
+                        </p>
+                    </div>
+                </div>
+            </main>
 
-    <aside>
-        <h2>When I have free time</h2>
-        <ol>
-            <li>I like to read webcomics and novels</li>
-            <li>Research various niche topics</li>
-            <li>Play video games</li>
-        </ol>
-        <p>My favorite website is <a href="https://www.wikipedia.org">Wikipedia.org</a> because it has no ads and serves as a free encyclopedia.</p>
-    </aside>
-    <footer>
-        <p>Last updated on October 5th</p>
-        <p>Email: <a href="mailto:danny_abraham@elcamino.edu">danny_abraham@elcamino.edu</a></p>
+            <!-- Sidebar -->
+            <aside class="col-lg-4">
+                <div class="card shadow-sm bg-light">
+                    <div class="card-body">
+                        <h2 class="card-title h5 mb-3">When I have free time</h2>
+                        <ol class="mb-3">
+                            <li>I like to read webcomics and novels</li>
+                            <li>Research various niche topics</li>
+                            <li>Play video games</li>
+                        </ol>
+                        <p class="card-text">
+                            My favorite website is 
+                            <a href="https://www.wikipedia.org" class="text-decoration-none">Wikipedia.org</a> 
+                            because it has no ads and serves as a free encyclopedia.
+                        </p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">Last updated on October 5th</p>
+            <p class="mb-0">
+                Email: <a href="mailto:danny_abraham@elcamino.edu" class="text-white">danny_abraham@elcamino.edu</a>
+            </p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
